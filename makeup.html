@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Products</title>
+    <link rel="stylesheet" href="./stayle/makeup.css">
+</head>
+<body>
+    <div class="mobile-filter-toggle">
+        <button id="filterToggle">
+            <span class="filter-icon">☰</span> Filters
+        </button>
+    </div>
+
+    <div class="container">
+        
+        <div class="filters" id="filtersPanel">
+            <div class="filters-header">
+                <h2>Filters</h2>
+                <button class="close-filters" id="closeFilters">×</button>
+            </div>
+
+            <!-- For face section -->
+            <div class="filter-section">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="forFace">
+                    <label for="forFace">For face</label>
+                </div>
+            </div>
+
+            <!-- For eyes section -->
+            <div class="filter-section">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="forEyes">
+                    <label for="forEyes">For eyes</label>
+                </div>
+            </div>
+
+            <!-- For lips section -->
+            <div class="filter-section">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="forLips" checked>
+                    <label for="forLips">For Lips</label>
+                </div>
+            </div>
+
+            <!-- Skin care section -->
+            <div class="filter-section">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="skinCare">
+                    <label for="skinCare">Skin care</label>
+                </div>
+            </div>
+
+            <!-- Body care section -->
+            <div class="filter-section">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="bodyCare">
+                    <label for="bodyCare">Body care</label>
+                </div>
+            </div>
+
+            <!-- Price section -->
+            <div class="filter-section">
+                <h3>Price</h3>
+                <div class="checkbox-group">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="price1" name="price" value="50-100" checked>
+                        <label for="price1">$50.0 - $100.0</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="price2" name="price" value="100-250">
+                        <label for="price2">$100.0 - $250.0</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="price3" name="price" value="400-650">
+                        <label for="price3">$400.0 - $650.0</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="price4" name="price" value="650-900">
+                        <label for="price4">$650.0 - $900.0</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colors section -->
+            <div class="filter-section">
+                <h3>Colors</h3>
+                <div class="colors-grid" id="colorsGrid"></div>
+            </div>
+
+            <!-- Brand section -->
+            <div class="filter-section">
+                <h3>Brand</h3>
+                <div class="checkbox-group">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="brand1" name="brand" value="Amanda" checked>
+                        <label for="brand1">Amanda</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="brand2" name="brand" value="Sheglam">
+                        <label for="brand2">Sheglam</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="brand3" name="brand" value="Loreal">
+                        <label for="brand3">L'oreal</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="brand4" name="brand" value="Dior">
+                        <label for="brand4">Dior</label>
+                    </div>
+                </div>
+            </div>
+
+            <button class="apply-filter">Apply Filter</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid"></div>
+    </div>
+
+    <div class="pagination" id="pagination"></div>
+
+    <script src="./js/makeup.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stayle/home.css">
+  <script src="https://kit.fontawesome.com/df24a9c160.js" crossorigin="anonymous"></script>
+  <title>EasyShop</title>
+</head>
+
+<body>
+  <header>
+    
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#"><img src="image/logo.svg" alt="logo"></a>
+        </div>
+        <nav>
+          <label for="toggle">
+            <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" id="toggle" />
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" class="lang">Arabic</a></li>
+          </ul>
+        </nav>
+        <div class="login">
+          <a href="login.html" class="login-btn btn">Login</a>
+        </div>
+      </div>
+      <div class="search-container">
+        <div class="country">
+          <i class="fa-solid fa-location-dot"></i>
+          <select>
+            <option>Egypt</option>
+            <option>Us</option>
+            <option>UK</option>
+          </select>
+        </div>
+        <div class="input-search">
+          <input type="text" placeholder="Search what you need" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button type="button" class="search-btn btn">Search</button>
+      </div>
+    </div>
+  </header>
+  <section class="landing-page">
+    <div class="landing">
+      <div class="tit">
+        <p>
+          Upgrade Your Tech Game <br>Discover the<span class="highlight">Latest Smartphones</span><br>
+          and <span class="highlight">PlayStation Consoles</span> at<br>
+          <span class="highlight">Unbeatable Prices!</span>
+        </p>
+      </div>
+      <div class="img">
+        <img src="image/Pics.svg" alt="phone">
+      </div>
+    </div>
+  </section>
+  <div class="slider-container">
+    <div class="container">
+      <div class="slider">
+        <div class="item">
+          <img src="./image/fashion 1-1.svg" alt="Clothes" />
+          <p>Sports & Outdoors</p>
+        </div>
+        <div class="item">
+          <img src="./image/fashion 1.svg" alt="Makeup" />
+          <p>Clothes</p>
+        </div>
+        <div class="item">
+          <img src="./image/jogging 1.svg" alt="Electronics" />
+          <p>Electronics</p>
+        </div>
+        <div class="item" >
+          <img src="./image/makeup 1-1.svg" alt="Sports" />
+          <p>Perfumes</p>
+        </div>
+         <div class="item" id="makeup">
+          <img src="image/makeup 1.svg" alt="Perfumes" />
+          <p>Makeup</p>
+        </div>
+        <div class="item">
+          <img src="image/online-shopping 1.svg" alt="Books" />
+          <p>Books</p>
+        </div>
+        <div class="item">
+          <img src="image/phone-call 1.svg" alt="Shoes" />
+          <p>Shoes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <main>
+    <section id="offers">
+      <div class="container-tow">
+        <div class="head-tit">
+          <h1>Offers</h1>
+          <button class="btn">view all</button>
+        </div>
+        <div class="container" id="offersGrid"></div>
+      </div>
+    </section>
+    <section id="recommended">
+      <div class="container-tow">
+        <div class="head-tit">
+          <h1>Recommended</h1>
+          <button class="btn">view all</button>
+        </div>
+        <div class="container" id="recommendedGrid"></div>
+      </div>
+    </section>
+    <section id="explore">
+      <div class="container-tow">
+        <div class="head-tit">
+          <h1>Explore Our Products</h1>
+          <button class="btn">view all</button>
+        </div>
+        <div class="container" id="exploreGrid"></div>
+      </div>
+    </section>
+  </main>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-branding">
+            <div class="logo">
+              <a href="#">EasyShop</a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/mohamed-elsheshtawey/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/mohamed-elsheshtawey/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/mohamed-elsheshtawey/"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Customer Services</h3>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Profile</h3>
+            <ul>
+              <li><a href="#">My account</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Account settings</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact us</h3>
+            <p>Phone: 305-555-0123</p>
+            <p>Email: contactstore@fakemail.com</p>
+            <p>Address: 789 Elm St. Orlando, FL 328</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <p>© 2024 Luxira, All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/product.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "product",
+            "description": "product for clothes category",
+            "price": "300.00",
+            "category_id": 1,
+            "img": "/storage/products_images/1738229362.png",
+            "created_at": "2025-01-30T10:29:22.000000Z",
+            "updated_at": "2025-01-30T10:29:22.000000Z"
+        },
+        {
+            "id": 2,
+            "name": "product",
+            "description": "product for clothes category",
+            "price": "400.00",
+            "category_id": 1,
+            "img": "/storage/products_images/1738229472.png",
+            "created_at": "2025-01-30T10:31:12.000000Z",
+            "updated_at": "2025-01-30T10:31:12.000000Z"
+        },
+        {
+            "id": 3,
+            "name": "product",
+            "description": "product for clothes category",
+            "price": "200.00",
+            "category_id": 1,
+            "img": "/storage/products_images/1738229508.png",
+            "created_at": "2025-01-30T10:31:48.000000Z",
+            "updated_at": "2025-01-30T10:31:48.000000Z"
+        },
+        {
+            "id": 4,
+            "name": "product",
+            "description": "product for clothes category",
+            "price": "150.00",
+            "category_id": 1,
+            "img": "/storage/products_images/1738229526.png",
+            "created_at": "2025-01-30T10:32:06.000000Z",
+            "updated_at": "2025-01-30T10:32:06.000000Z"
+        },
+        {
+            "id": 5,
+            "name": "product",
+            "description": "product for clothes category",
+            "price": "100.00",
+            "category_id": 1,
+            "img": "/storage/products_images/1738229551.png",
+            "created_at": "2025-01-30T10:32:31.000000Z",
+            "updated_at": "2025-01-30T10:32:31.000000Z"
+        },
+        {
+            "id": 6,
+            "name": "product",
+            "description": "product for makeup category",
+            "price": "100.00",
+            "category_id": 2,
+            "img": "/storage/products_images/1738229610.png",
+            "created_at": "2025-01-30T10:33:30.000000Z",
+            "updated_at": "2025-01-30T10:33:30.000000Z"
+        },
+        {
+            "id": 7,
+            "name": "product",
+            "description": "product for makeup category",
+            "price": "50.00",
+            "category_id": 2,
+            "img": "/storage/products_images/1738229639.png",
+            "created_at": "2025-01-30T10:33:59.000000Z",
+            "updated_at": "2025-01-30T10:33:59.000000Z"
+        },
+        {
+            "id": 8,
+            "name": "product",
+            "description": "product for makeup category",
+            "price": "33.00",
+            "category_id": 2,
+            "img": "/storage/products_images/1738229689.png",
+            "created_at": "2025-01-30T10:34:49.000000Z",
+            "updated_at": "2025-01-30T10:34:49.000000Z"
+        },
+        {
+            "id": 9,
+            "name": "product",
+            "description": "product for makeup category",
+            "price": "66.00",
+            "category_id": 2,
+            "img": "/storage/products_images/1738229714.png",
+            "created_at": "2025-01-30T10:35:14.000000Z",
+            "updated_at": "2025-01-30T10:35:14.000000Z"
+        },
+        {
+            "id": 10,
+            "name": "product",
+            "description": "product for makeup category",
+            "price": "88.00",
+            "category_id": 2,
+            "img": "/storage/products_images/1738229750.png",
+            "created_at": "2025-01-30T10:35:50.000000Z",
+            "updated_at": "2025-01-30T10:35:50.000000Z"
+        },
+        {
+            "id": 11,
+            "name": "product",
+            "description": "product for makeup electronic",
+            "price": "2000.00",
+            "category_id": 3,
+            "img": "/storage/products_images/1738229845.png",
+            "created_at": "2025-01-30T10:37:25.000000Z",
+            "updated_at": "2025-01-30T10:37:25.000000Z"
+        },
+        {
+            "id": 12,
+            "name": "product",
+            "description": "product for makeup electronic",
+            "price": "2500.00",
+            "category_id": 3,
+            "img": "/storage/products_images/1738229895.png",
+            "created_at": "2025-01-30T10:38:15.000000Z",
+            "updated_at": "2025-01-30T10:38:15.000000Z"
+        },
+        {
+            "id": 13,
+            "name": "product",
+            "description": "product for makeup electronic",
+            "price": "3000.00",
+            "category_id": 3,
+            "img": "/storage/products_images/1738229925.png",
+            "created_at": "2025-01-30T10:38:45.000000Z",
+            "updated_at": "2025-01-30T10:38:45.000000Z"
+        },
+        {
+            "id": 14,
+            "name": "product",
+            "description": "product for makeup electronic",
+            "price": "1000.00",
+            "category_id": 3,
+            "img": "/storage/products_images/1738229960.png",
+            "created_at": "2025-01-30T10:39:20.000000Z",
+            "updated_at": "2025-01-30T10:39:20.000000Z"
+        },
+        {
+            "id": 15,
+            "name": "product",
+            "description": "product for makeup electronic",
+            "price": "4000.00",
+            "category_id": 3,
+            "img": "/storage/products_images/1738229998.png",
+            "created_at": "2025-01-30T10:39:58.000000Z",
+            "updated_at": "2025-01-30T10:39:58.000000Z"
+        }
+    ]
+}

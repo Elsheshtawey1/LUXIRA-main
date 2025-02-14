@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/df24a9c160.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./stayle/logain.css">
+    <title>LUXIRA-LOGIN</title>
+</head>
+<body>
+ <section class="login">
+        <div class="circle-one"></div>
+        <div class="circle-two"></div>
+        <div class="login-container">
+            <h1>Hi, Welcome to Luxira!</h1>
+            <p>New here? <a href="Register.html">Create an account.</a></p>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="form-actions">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember this device</label>
+                    </div>
+                    <a href="Forgotyourpassword.html">Forgot your password?</a>
+                </div>
+
+                <button type="submit" class="login-button">Log In</button>
+                <p id="error-message" style="color: red;"></p>
+
+                <div class="divider">Or Login With</div>
+
+                <button type="button" class="google-button">
+                    <img src="image/png-clipart-google-logo-google-logo-google-search-icon-google-text-logo-thumbnail-removebg-preview.png" alt="Google Logo">
+                    Sign up with Google
+                </button>
+            </form>
+        </div>
+    </section>
+    <script src="js/logain.js"></script>
+</body>
+</html>

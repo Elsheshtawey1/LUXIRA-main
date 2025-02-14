@@ -1,0 +1,751 @@
+{
+	"info": {
+		"_postman_id": "bd392354-fa3d-430e-b37c-cbce82a09094",
+		"name": "bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38151552"
+	},
+	"item": [
+		{
+			"name": "signning",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n  \"name\": \"John Doe\",\n  \"email\": \"johndoed@example.com\",\n  \"password\": \"password123\",\n  \"password_confirmation\": \"password123\",\n  \"phone\": \"01065894304\",\n  \"address\": \"123 Main St, City, Country\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://orientonline.info/api/register",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"johndoed@example.com\",\n  \"password\": \"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://orientonline.info/api/login",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5|kMYIRl8VcHANRaauVkY3FnZJTGHfLQbCZD496Jke81254751",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/logout",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "get products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/products",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "creating product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "kkkkkkkk",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "sndjbfjkbsfjksbf",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "11.11",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "postman-cloud:///1efdd8d3-510d-4ec0-b87c-048b03753044"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://orientonline.info/api/products",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/products/17",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"products",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"ndjns\",\n    \"description\":\"sddsddsd\",\n    \"price\":\"99\",\n    \"category_id\":\"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://orientonline.info/api/products/17",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"products",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/products/17",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"products",
+								"17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "Get categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/categories",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "creating category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "sbbsuisfdcscs",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "dsnjkfnsknfasnfjkasbnjkasfsjf",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "postman-cloud:///1efdeee2-8ac7-4bf0-a892-52e6a1010caf"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://orientonline.info/api/categories",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/categories/5",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"categories",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the HTML content schema\", function () {",
+									"    const htmlContent = pm.response.text();",
+									"    ",
+									"    pm.expect(htmlContent).to.include(\"<!DOCTYPE html>\");",
+									"    pm.expect(htmlContent).to.include(\"<html lang=\\\"en\\\">\");",
+									"    pm.expect(htmlContent).to.include(\"<head>\");",
+									"    pm.expect(htmlContent).to.include(\"<title>Laravel</title>\");",
+									"    pm.expect(htmlContent).to.include(\"<body class=\\\"font-sans antialiased dark:bg-black dark:text-white/50\\\">\");",
+									"    pm.expect(htmlContent).to.include(\"<footer class=\\\"py-16 text-center text-sm text-black dark:text-white/70\\\">\");",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "kkkkddsdsds",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "sdsdssdds",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "postman-cloud:///1efdda1a-17b9-4a00-bc1b-f5093f5fa9d3"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://orientonline.info/api/categories/5",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"categories",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/categories/5",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"categories",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "add to cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|8LdvC9n4Z7t6leri5c2MZCFFDNSzKVPfFyy8o0aLd85ce57f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\":\"3\",\n    \"product_id\":\"2\",\n    \"quantity\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://orientonline.info/api/cart/add",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"cart",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update quantity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|8LdvC9n4Z7t6leri5c2MZCFFDNSzKVPfFyy8o0aLd85ce57f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quantity\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://orientonline.info/api/cart/update/5",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"cart",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove from cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|8LdvC9n4Z7t6leri5c2MZCFFDNSzKVPfFyy8o0aLd85ce57f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/cart/remove/5",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"cart",
+								"remove",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all what in the cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|8LdvC9n4Z7t6leri5c2MZCFFDNSzKVPfFyy8o0aLd85ce57f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/cart",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove all what in the cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|8LdvC9n4Z7t6leri5c2MZCFFDNSzKVPfFyy8o0aLd85ce57f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/cart/clear",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"cart",
+								"clear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|8LdvC9n4Z7t6leri5c2MZCFFDNSzKVPfFyy8o0aLd85ce57f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://orientonline.info/api/cart/checkout",
+							"protocol": "https",
+							"host": [
+								"orientonline",
+								"info"
+							],
+							"path": [
+								"api",
+								"cart",
+								"checkout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "avatar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|8LdvC9n4Z7t6leri5c2MZCFFDNSzKVPfFyy8o0aLd85ce57f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "postman-cloud:///1efdd8d3-510d-4ec0-b87c-048b03753044"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://orientonline.info/api/avatar",
+					"protocol": "https",
+					"host": [
+						"orientonline",
+						"info"
+					],
+					"path": [
+						"api",
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Authenticated user data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|8LdvC9n4Z7t6leri5c2MZCFFDNSzKVPfFyy8o0aLd85ce57f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://orientonline.info/api/user/show",
+					"protocol": "https",
+					"host": [
+						"orientonline",
+						"info"
+					],
+					"path": [
+						"api",
+						"user",
+						"show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Authenticated user data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|8LdvC9n4Z7t6leri5c2MZCFFDNSzKVPfFyy8o0aLd85ce57f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Johns \",\n    \"email\": \"john@example.com\",\n    \"phone\": \"01065894302\",\n    \"address\": \"123 Main St, City, Country\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://orientonline.info/api/user/update",
+					"protocol": "https",
+					"host": [
+						"orientonline",
+						"info"
+					],
+					"path": [
+						"api",
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
